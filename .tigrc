@@ -1,0 +1,33 @@
+# Do an interactive rebase!
+bind main I !?git rebase -i %(commit)
+
+# Creat new branch from commit!
+bind main N ?git checkout -b "%(prompt Enter new branch name: )" %(commit)
+
+# Delete branch
+bind branch d !?git branch -d %(branch)
+
+# Stash unstaged changes
+#bind status S !?git stash save --keep-index %(prompt)
+bind status S !?git stash
+bind status C @?git checkout -- %(file)
+
+# Reload ~/.tigrc when 'S' is pressed
+#bind generic S :source .tigrc
+
+set main-view = date:short author:width=8 id:width=9 commit-title:refs=true,graph=true
+set refs-view = date:short id:width=9 ref commit-title:refs=true,graph=true
+#set blame-view = date:short author:width=8 id text
+#set refresh-mode = after-command
+
+set commit-order = false
+set line-graphics = ascii
+
+# Set colors.
+#color default white color2
+#color cursor white green bold
+color author color2 default bold
+color id color6 default bold
+color date color3 default bold
+color main-head color5 default bold
+color main-remote color7 default
