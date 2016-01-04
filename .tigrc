@@ -17,8 +17,6 @@ bind status C @?git checkout -- %(file)
 
 set main-view = date:short author:width=8 id:width=9 commit-title:refs=true,graph=true
 set refs-view = date:short id:width=9 ref commit-title:refs=true,graph=true
-#set blame-view = date:short author:width=8 id text
-#set refresh-mode = after-command
 
 set commit-order = false
 set line-graphics = ascii
