@@ -8,9 +8,7 @@ bind main B ?git branch "%(prompt Enter new branch name: )" %(commit)
 bind branch d !?git branch -d %(branch)
 
 # Stash unstaged changes
-#bind status S !?git stash save --keep-index %(prompt)
 bind status S !?git stash
-bind status C @?git checkout -- %(file)
 
 # Reload ~/.tigrc when 'S' is pressed
 #bind generic S :source .tigrc
