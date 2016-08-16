@@ -13,8 +13,8 @@ bind status S !?git stash
 # Reload ~/.tigrc when 'S' is pressed
 #bind generic S :source .tigrc
 
-set main-view = date:short author:width=8 id:width=9 commit-title:refs=true,graph=true
-set refs-view = date:short id:width=9 ref commit-title:refs=true,graph=true
+set main-view = date:default author:width=8 id:width=9 commit-title:refs=true,graph=true
+set refs-view = date:default id:width=9 ref commit-title:refs=true,graph=true
 
 set commit-order = false
 set line-graphics = ascii
