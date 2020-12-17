@@ -1,14 +1,32 @@
+##########
+# MAIN
+##########
+
 # Do an interactive rebase!
 bind main I !?git rebase -i %(commit)
 
 # Creat new branch from commit!
 bind main B ?git branch "%(prompt Enter new branch name: )" %(commit)
 
+
+##########
+# REFS
+##########
+
 # Delete branch
 bind branch d !?git branch -d %(branch)
 
+
+##########
+# STATUS
+##########
+
 # Stash unstaged changes
 bind status S !?git stash
+
+##########
+# MISC
+##########
 
 # Reload ~/.tigrc when 'S' is pressed
 #bind generic S :source .tigrc
