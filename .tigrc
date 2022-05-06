@@ -34,7 +34,8 @@ bind status S !?git stash
 set main-view = date:default author:width=8 id:width=9 commit-title:refs=true,graph=true
 set refs-view = date:default id:width=9 ref commit-title:refs=true,graph=true
 
-set commit-order = false
+set commit-order = default
+
 set line-graphics = ascii
 
 # Set colors.
