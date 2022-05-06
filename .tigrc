@@ -40,6 +40,9 @@ set line-graphics = ascii
 
 set tab-size = 2
 
+# Optionally, use the old and faster but less acurate graph renderer
+set main-view-commit-title-graph = v1
+
 # Set colors.
 #color default white color2
 #color cursor white green bold
