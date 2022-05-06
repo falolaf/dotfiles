@@ -44,10 +44,15 @@ set tab-size = 2
 set main-view-commit-title-graph = v1
 
 # Set colors.
-#color default white color2
-#color cursor white green bold
-color author color2 default bold
-color id color6 default bold
-color date color3 default bold
-color main-head color5 default bold
-color main-remote color7 default
+# https://github.com/jonas/tig/blob/5d53d2ddb26fc40d0e8d37c4f8eb6df2af492854/tigrc#L269
+#color default white default
+color cursor black white bold
+#color author color2 default bold
+color id cyan default bold
+color date white default bold
+#color main-head color5 default bold
+#color main-remote color7 default
+color grep.file     blue  default
+
+color diff-stat     cyan  default
+color "index "      cyan  default
