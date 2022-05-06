@@ -38,6 +38,8 @@ set commit-order = default
 
 set line-graphics = ascii
 
+set tab-size = 2
+
 # Set colors.
 #color default white color2
 #color cursor white green bold
